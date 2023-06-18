@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var textToSpeech = TextToSpeech()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,6 +18,9 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onTapGesture {
+            textToSpeech.speak(string: "The quick brown fox jumped over the lazy dog.")
+        }
     }
 }
 
