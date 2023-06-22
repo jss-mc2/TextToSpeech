@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320C99E32A420AC000A0670E /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C99E22A420AC000A0670E /* IntentHandler.swift */; };
+		320C99E62A42AB3C00A0670E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C99E52A42AB3C00A0670E /* AppDelegate.swift */; };
+		320C99E82A42AC5100A0670E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C99E72A42AC5100A0670E /* SceneDelegate.swift */; };
 		96572A2A2A3F02BC00C1E0D1 /* TextToSpeechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96572A292A3F02BC00C1E0D1 /* TextToSpeechApp.swift */; };
 		96572A2C2A3F02BC00C1E0D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96572A2B2A3F02BC00C1E0D1 /* ContentView.swift */; };
 		96572A2E2A3F02BE00C1E0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96572A2D2A3F02BE00C1E0D1 /* Assets.xcassets */; };
@@ -14,7 +17,24 @@
 		96572A382A3F02FA00C1E0D1 /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96572A372A3F02FA00C1E0D1 /* TextToSpeech.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		320C99DD2A41F5C400A0670E /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		320C99E22A420AC000A0670E /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		320C99E42A420DA800A0670E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		320C99E52A42AB3C00A0670E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		320C99E72A42AC5100A0670E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		96572A262A3F02BC00C1E0D1 /* TextToSpeech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextToSpeech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96572A292A3F02BC00C1E0D1 /* TextToSpeechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechApp.swift; sourceTree = "<group>"; };
 		96572A2B2A3F02BC00C1E0D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		320C99E12A420AA800A0670E /* Intent Handler */ = {
+			isa = PBXGroup;
+			children = (
+				320C99E22A420AC000A0670E /* IntentHandler.swift */,
+			);
+			name = "Intent Handler";
+			sourceTree = "<group>";
+		};
 		96572A1D2A3F02BC00C1E0D1 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +81,11 @@
 		96572A282A3F02BC00C1E0D1 /* TextToSpeech */ = {
 			isa = PBXGroup;
 			children = (
+				320C99E42A420DA800A0670E /* Info.plist */,
+				320C99E12A420AA800A0670E /* Intent Handler */,
 				96572A292A3F02BC00C1E0D1 /* TextToSpeechApp.swift */,
+				320C99E52A42AB3C00A0670E /* AppDelegate.swift */,
+				320C99E72A42AC5100A0670E /* SceneDelegate.swift */,
 				96572A2B2A3F02BC00C1E0D1 /* ContentView.swift */,
 				96572A2D2A3F02BE00C1E0D1 /* Assets.xcassets */,
 				96572A2F2A3F02BE00C1E0D1 /* Preview Content */,
@@ -80,6 +112,7 @@
 				96572A222A3F02BC00C1E0D1 /* Sources */,
 				96572A232A3F02BC00C1E0D1 /* Frameworks */,
 				96572A242A3F02BC00C1E0D1 /* Resources */,
+				320C99DD2A41F5C400A0670E /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
@@ -97,7 +130,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					96572A252A3F02BC00C1E0D1 = {
@@ -142,7 +175,10 @@
 			files = (
 				96572A2C2A3F02BC00C1E0D1 /* ContentView.swift in Sources */,
 				96572A382A3F02FA00C1E0D1 /* TextToSpeech.swift in Sources */,
+				320C99E32A420AC000A0670E /* IntentHandler.swift in Sources */,
+				320C99E62A42AB3C00A0670E /* AppDelegate.swift in Sources */,
 				96572A2A2A3F02BC00C1E0D1 /* TextToSpeechApp.swift in Sources */,
+				320C99E82A42AC5100A0670E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,14 +307,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TextToSpeech/Preview Content\"";
-				DEVELOPMENT_TEAM = G85YYYKRLS;
+				DEVELOPMENT_TEAM = WMK9L7H7UT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TextToSpeech/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,6 +324,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = JSS.TextToSpeech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,14 +341,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TextToSpeech/Preview Content\"";
-				DEVELOPMENT_TEAM = G85YYYKRLS;
+				DEVELOPMENT_TEAM = WMK9L7H7UT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TextToSpeech/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +358,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = JSS.TextToSpeech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
